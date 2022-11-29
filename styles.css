@@ -1,0 +1,55 @@
+*{
+    font-family: monospace;
+}
+
+#board, .boardIngo{
+    max-width: 500px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .boardInfo{
+    font-size: 25px;
+}
+
+#gameOver{
+    display: none;
+}
+
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start{
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+#scoreBoard{
+    display: inline;
+}
+
+.square{
+    aspect-ratio: 1;
+}
+
+/* cuadrados vacios */
+.emptySquare{
+    background-color: cornflowerblue;
+}
+
+/* snake */
+.snakeSquare{
+    background-color: greenyellow;
+}
+
+/* comida */
+.foodSquare{
+    background-color: tomato;
+}
